@@ -83,7 +83,7 @@
                 follows[i] = follows[i + 1];
             }
         }
-        if(isFound || follows[fCount - 1].equals(name)){
+        if(isFound || (fCount > 0 && follows[fCount - 1].equals(name))){
             follows[fCount - 1] = null;
             fCount--;
             System.out.println("The user " + this.name + " no longer follows " + name);
